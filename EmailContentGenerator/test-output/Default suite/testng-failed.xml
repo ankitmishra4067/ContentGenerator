@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Com.EmailContentGenerator.EmailContent">
+        <methods>
+          <include name="setup"/>
+          <include name="generator" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18"/>
+          <include name="report"/>
+          <include name="teardown"/>
+          <include name="close"/>
+          <include name="replaceName"/>
+        </methods>
+      </class> <!-- Com.EmailContentGenerator.EmailContent -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
