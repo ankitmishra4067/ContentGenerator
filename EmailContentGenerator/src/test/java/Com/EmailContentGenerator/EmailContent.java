@@ -350,18 +350,6 @@ public class EmailContent {
     	
     	 
     	 
-    	
-    	 
-    	 
-    	 
-    	 
-    	 
-    	 
-    	 
-    	 
-    	 
-    	 
-    	 
     	 
     	 
     	 public String[][] getExcelData1(String sheetName) throws IOException {
@@ -471,7 +459,7 @@ public class EmailContent {
     	                        if (cellC != null && cellE != null) {
     	                            String name = cellC.getStringCellValue();
     	                            String content = cellE.getStringCellValue();
-    	                            String updatedContent = content.replace("(First_Name)", name).replace("(First_name)", name);
+    	                            String updatedContent = content.replace("(First_Name)", name).replace("(First_name)", name).replace("(First Name)", name).replace("(First Name", name).replace("(First_Name", name);
 
     	                            // Write updated content back to column E (index 4)
     	                            cellE.setCellValue(updatedContent);
