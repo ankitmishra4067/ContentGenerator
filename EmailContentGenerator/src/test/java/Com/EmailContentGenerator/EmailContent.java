@@ -249,12 +249,13 @@ public class EmailContent {
     	 	        WebElement username = wait.until(
     	 	            ExpectedConditions.elementToBeClickable(By.xpath("//input[@name='username']")));
     	 	        username.click();
-    	 	        username.sendKeys("ankit.k@hashstudioz.com");
+					//fill username and passwords here.
+    	 	        username.sendKeys("  ");
     	 		    	 
     	 		    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20)); 
     	 		    WebElement password = driver.findElement(By.xpath("//input[@name='password']"));   
     	 		    password.click();
-    	 		    password.sendKeys("Rephrase@12345");
+    	 		    password.sendKeys("  ");
     	 		 
     	 		    WebElement login = driver.findElement(By.xpath("//span[normalize-space()='Log in']"));
     	 		    login.click();
